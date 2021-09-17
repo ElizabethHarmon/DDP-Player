@@ -1,5 +1,5 @@
 # DDP-Player
-Simple CLI tool to play DDP files in Linux. 
+Simple CLI tool to play DDP files in Linux.  
 Requirements: ddpinfo from http://ddp.andreasruge.de/
 
 Usage: 
