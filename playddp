@@ -1,0 +1,8 @@
+#!/bin/bash
+track=$( printf "%02d" $2)
+tracktime=$( ddpinfo "$1" | grep "$track 01" | cut -c 8-12 )
+if [ -z "$2" ]; then
+play -b 16 -r 44100 -c 2 -t raw -e signed-integer "$1"/*.DAT trim 0:00
+else
+play -b 16 -r 44100 -c 2 -t raw -e signed-integer "$1"/*.DAT trim "$tracktime"
+fi
